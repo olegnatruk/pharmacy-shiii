@@ -29,3 +29,11 @@ Scope decisions ADR-001 to ADR-015 are recorded in [DECISIONS.md](DECISIONS.md),
 - deactivate instead of delete
 
 Next: Milestone 0 in the [README](../README.md#build-order).
+
+## 2026-10-22 — Setup — Blueprint, git guide, member prompts
+Added three things:
+- [BLUEPRINT.md](BLUEPRINT.md): every file, with its owner and milestone. It replaces the folder trees that used to be in ARCHITECTURE §2 and each CONTEXT.md.
+- [GIT-GUIDE.md](GIT-GUIDE.md) and a PR template in `.github/`.
+- `<member>/docs/PROMPTS.md`: step-by-step agent prompts with the git commands for each step.
+
+Two new files are planned: `karlo/.../ui/MedicineTable.java` and `cameron/.../model/SalesReport.java`. The merge order across members is in GIT-GUIDE §9.

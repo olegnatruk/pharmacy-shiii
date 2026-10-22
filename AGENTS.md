@@ -18,7 +18,10 @@ If you don't know which member you are helping, **ask before editing anything.**
 
 | Question | File |
 |---|---|
-| Which classes exist, which layer does what, what can I call from another member? | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) (§6 = contracts) |
+| Which file goes where? What is each file for? | [docs/BLUEPRINT.md](docs/BLUEPRINT.md) |
+| Which layer does what, what can I call from another member? | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) (§6 = contracts) |
+| What is my member's next step? | `<member>/docs/PROMPTS.md` + `<member>/docs/CONTEXT.md` |
+| Git commands | [docs/GIT-GUIDE.md](docs/GIT-GUIDE.md) (the member runs them, not you) |
 | File format, columns, IDs, enums, constants | [docs/DATA.md](docs/DATA.md) |
 | What exactly should feature X do? | [docs/FEATURES.md](docs/FEATURES.md) |
 | How must input X be validated? | [docs/VALIDATION.md](docs/VALIDATION.md) |
@@ -53,6 +56,7 @@ The code wins: if a doc disagrees with the code, fix the doc in the same change.
 
 | You changed… | Update |
 |---|---|
+| Added, renamed or removed a file | `docs/BLUEPRINT.md` |
 | A class, package, or cross-member method | `docs/ARCHITECTURE.md` + shared `docs/SESSION_LOG.md` |
 | A data file column, ID format, enum, or constant | `docs/DATA.md` + shared `docs/SESSION_LOG.md` |
 | Feature behaviour or a menu option | `docs/FEATURES.md` |

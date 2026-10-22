@@ -65,11 +65,11 @@ pharmacy-management-system/
 ├── heather/src/pharmacy/auth/        accounts                (owner: Heather)
 ├── karlo/src/pharmacy/inventory/     medicines & stock       (owner: Karlo)
 ├── cameron/src/pharmacy/orders/      orders & analytics      (owner: Cameron)
-├── <member>/docs/        each member's agent context: CONTEXT, GOTCHAS, SESSION_LOG
+├── <member>/docs/        each member's CONTEXT, PROMPTS, GOTCHAS, SESSION_LOG
 └── data/                 created at runtime, git-ignored
 ```
 
-All four `src/` folders compile together into **one** program. The layers (Menu → Service → Repository → DataStore), class diagram, and the exact classes each member exposes to the others are in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+**The full blueprint of all 62 Java files, with each one's purpose, owner and milestone, is in [docs/BLUEPRINT.md](docs/BLUEPRINT.md).** All four `src/` folders compile together into **one** program. The layers (Menu → Service → Repository → DataStore), class diagram, and the exact classes each member exposes to the others are in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
 ## Run it
 
@@ -102,7 +102,9 @@ To reset all data, delete the `data/` folder. The next run recreates it with onl
 
 ## Build order
 
-`common/` must exist before anything else compiles, and `AdminMenu`/`PharmacistMenu` need every member's menu class. Work in this order:
+`common/` must exist before anything else compiles, and `AdminMenu`/`PharmacistMenu` need every member's menu class. Work in this order.
+
+**Each member follows their own step-by-step prompts, with the git commands for each step, in `<member>/docs/PROMPTS.md`:** [Heather](heather/docs/PROMPTS.md) · [Karlo](karlo/docs/PROMPTS.md) · [Cameron](cameron/docs/PROMPTS.md).
 
 | Milestone | Who | What | Done when |
 |---|---|---|---|
@@ -115,7 +117,7 @@ To reset all data, delete the `data/` folder. The next run recreates it with onl
 
 ## Working together on GitHub
 
-The full rules are in [docs/CONVENTIONS.md §4](docs/CONVENTIONS.md#4-git-workflow). In short:
+**Exact commands** for setup, branching, committing, pushing, pull requests, reviews, merging, and fixing mistakes are in **[docs/GIT-GUIDE.md](docs/GIT-GUIDE.md)**. The rules are in [docs/CONVENTIONS.md §4](docs/CONVENTIONS.md#4-git-workflow). In short:
 
 1. Never commit straight to `main`. `main` must always compile.
 2. Branch per feature: `heather/login`, `karlo/catalog-crud`, `cameron/discounts`.
@@ -130,12 +132,14 @@ The full rules are in [docs/CONVENTIONS.md §4](docs/CONVENTIONS.md#4-git-workfl
 |---|---|
 | [AGENTS.md](AGENTS.md) | Rules for AI coding agents (start here if you are one) |
 | [PROJECT-BRIEF.md](PROJECT-BRIEF.md) | Why the project exists, its objectives, and scope |
+| [docs/BLUEPRINT.md](docs/BLUEPRINT.md) | **Every file** in the app: path, purpose, owner, milestone; who-calls-whom diagram |
 | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | Layers, packages, class diagram, patterns, **cross-member contracts**, order status and stock rules |
 | [docs/DATA.md](docs/DATA.md) | Every data file, its column order, ID and date formats, enums, constants |
 | [docs/FEATURES.md](docs/FEATURES.md) | What every feature does, its owner and menu path |
 | [docs/VALIDATION.md](docs/VALIDATION.md) | Every validation rule and error message, plus the hostile-input checklist |
 | [docs/DECISIONS.md](docs/DECISIONS.md) | Why things are the way they are (ADR-001…015) |
 | [docs/CONVENTIONS.md](docs/CONVENTIONS.md) | Code style, OOP rules, git workflow, how to verify |
+| [docs/GIT-GUIDE.md](docs/GIT-GUIDE.md) | Copy-paste git/GitHub commands: branch, commit, push, PR, review, merge |
 | [docs/GOTCHAS.md](docs/GOTCHAS.md) | Java pitfalls that look like bugs |
 | [docs/SESSION_LOG.md](docs/SESSION_LOG.md) | Changes that affect everyone |
-| `heather/`, `karlo/`, `cameron/` `docs/` | Each member's checklist, own gotchas, own session log |
+| `heather/`, `karlo/`, `cameron/` `docs/` | Each member's checklist (CONTEXT), step-by-step agent prompts and git commands (PROMPTS), own gotchas, own session log |

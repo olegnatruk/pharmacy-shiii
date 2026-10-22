@@ -17,34 +17,14 @@ How the Pharmacy Management System is put together. This is the **contract** bet
 
 Each member's code lives in **their own folder**, but all folders compile together into one program (they share the `pharmacy` package root).
 
-```
-common/src/pharmacy/                  owner: Heather (shared foundation)
-├── Main.java
-└── common/
-    ├── model/       Storable, User, Admin, Pharmacist, Role, AccountStatus
-    ├── data/        DataStore (Singleton), DataFiles
-    ├── session/     Session (Singleton)
-    ├── exception/   PharmacyException + 6 shared subclasses
-    ├── util/        ConsoleInput, InputRule, InputValidator, Format
-    └── ui/          Menu, BaseMenu, AdminMenu, PharmacistMenu
+| Folder | Package root | Sub-packages | Owner |
+|---|---|---|---|
+| `common/src/` | `pharmacy` (`Main`), `pharmacy.common` | `model`, `data`, `session`, `exception`, `util`, `ui` | Heather |
+| `heather/src/` | `pharmacy.auth` | `ui` | Heather |
+| `karlo/src/` | `pharmacy.inventory` | `model`, `exception`, `ui` | Karlo |
+| `cameron/src/` | `pharmacy.orders` | `model`, `discount`, `exception`, `ui` | Cameron |
 
-heather/src/pharmacy/auth/            owner: Heather
-├── UserRepository, AuthService, UserService
-└── ui/          AuthMenu, ProfileMenu, UserManagementMenu
-
-karlo/src/pharmacy/inventory/         owner: Karlo
-├── MedicineRepository, StockAuditRepository, InventoryService, MedicineFilter
-├── model/       Medicine, MedicineCategory, MedicineStatus, StockAudit
-├── exception/   InsufficientStockException
-└── ui/          MedicineBrowserMenu, CatalogMenu, StockAuditMenu
-
-cameron/src/pharmacy/orders/          owner: Cameron
-├── OrderRepository, VoidRecordRepository, OrderService, AnalyticsService
-├── model/       Order, OrderItem, OrderStatus, VoidRecord
-├── discount/    DiscountStrategy, DiscountType, RegularDiscount, SeniorPwdDiscount, BulkDiscount
-├── exception/   InvalidStatusTransitionException
-└── ui/          OrderMenu, OrderAdminMenu, AnalyticsMenu
-```
+**Every file, with its purpose and milestone, is listed in [BLUEPRINT.md](BLUEPRINT.md).** That is the single source for "which file goes where".
 
 The folder path below `src/` **must** match the `package` line (e.g. `karlo/src/pharmacy/inventory/model/Medicine.java` → `package pharmacy.inventory.model;`).
 

@@ -8,6 +8,7 @@
 1. Root [AGENTS.md](../AGENTS.md): project rules and doc map.
 2. This file.
 3. [docs/CONTEXT.md](docs/CONTEXT.md): your features, classes, contracts, checklist.
+   Your member runs the steps in [docs/PROMPTS.md](docs/PROMPTS.md). Follow its **Working rules**.
 4. [docs/GOTCHAS.md](docs/GOTCHAS.md) and the last few entries of [docs/SESSION_LOG.md](docs/SESSION_LOG.md).
 5. Shared docs as needed: [FEATURES §Medicines](../docs/FEATURES.md#medicines--karlo), [VALIDATION §3.2](../docs/VALIDATION.md#32-medicines-and-stock--karlo), [DATA §3.2–3.3](../docs/DATA.md#32-medicinestxt--owner-karlo), [ARCHITECTURE §6](../docs/ARCHITECTURE.md#6-cross-member-contracts).
 

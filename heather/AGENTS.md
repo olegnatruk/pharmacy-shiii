@@ -8,6 +8,7 @@
 1. Root [AGENTS.md](../AGENTS.md): project rules and doc map.
 2. This file.
 3. [docs/CONTEXT.md](docs/CONTEXT.md): your features, classes, contracts, checklist.
+   Your member runs the steps in [docs/PROMPTS.md](docs/PROMPTS.md). Follow its **Working rules**.
 4. [../common/docs/CONTEXT.md](../common/docs/CONTEXT.md): the foundation you also own.
 5. [docs/GOTCHAS.md](docs/GOTCHAS.md) and the last few entries of [docs/SESSION_LOG.md](docs/SESSION_LOG.md).
 6. Shared docs as needed: [FEATURES §Accounts](../docs/FEATURES.md#accounts--heather), [VALIDATION §3.1](../docs/VALIDATION.md#31-accounts--heather), [DATA §3.1](../docs/DATA.md#31-userstxt--owner-heather).

@@ -48,6 +48,8 @@ How to write code that fits the rest of this project, and how the three of us wo
 
 ## 4. Git workflow
 
+The exact commands are in [GIT-GUIDE.md](GIT-GUIDE.md). These are the rules:
+
 | Rule | Detail |
 |---|---|
 | `main` | Always compiles and runs. Never commit directly to `main`. |

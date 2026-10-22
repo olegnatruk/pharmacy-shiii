@@ -3,24 +3,7 @@
 Features: **M1 Browse · M2 View Details · M3 Search & Filter · M4 Manage Catalog · M5 Stock & Inventory Audit**. The full behaviour is in [FEATURES §Medicines](../../docs/FEATURES.md#medicines--karlo) and the rules in [VALIDATION §3.2](../../docs/VALIDATION.md#32-medicines-and-stock--karlo). Data formats: [DATA §3.2–3.3](../../docs/DATA.md#32-medicinestxt--owner-karlo).
 
 ## Folder layout
-```
-karlo/src/pharmacy/inventory/
-├── MedicineRepository.java
-├── StockAuditRepository.java
-├── InventoryService.java
-├── MedicineFilter.java
-├── model/
-│   ├── Medicine.java
-│   ├── MedicineCategory.java
-│   ├── MedicineStatus.java
-│   └── StockAudit.java
-├── exception/
-│   └── InsufficientStockException.java
-└── ui/
-    ├── MedicineBrowserMenu.java
-    ├── CatalogMenu.java
-    └── StockAuditMenu.java
-```
+Every file you create, with its purpose and milestone: [BLUEPRINT §4](../../docs/BLUEPRINT.md#4-karlo--medicines--inventory-karlo).
 
 ## Classes to build
 

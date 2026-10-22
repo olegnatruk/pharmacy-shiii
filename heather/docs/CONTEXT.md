@@ -5,16 +5,7 @@ Features: **A1 Register · A2 Login/Logout · A3 Manage Profile · A4 Manage Use
 You also own `common/`: see [common/docs/CONTEXT.md](../../common/docs/CONTEXT.md). Build it first.
 
 ## Folder layout
-```
-heather/src/pharmacy/auth/
-├── UserRepository.java
-├── AuthService.java
-├── UserService.java
-└── ui/
-    ├── AuthMenu.java
-    ├── ProfileMenu.java
-    └── UserManagementMenu.java
-```
+Every file you create, with its purpose and milestone: [BLUEPRINT §3](../../docs/BLUEPRINT.md#3-heather--accounts-heather).
 
 ## Classes to build
 

@@ -16,30 +16,7 @@ Features:
 The full behaviour is in [FEATURES §Orders](../../docs/FEATURES.md#orders--cameron) and the rules in [VALIDATION §3.3](../../docs/VALIDATION.md#33-orders-discounts-prescriptions-analytics--cameron). Data formats: [DATA §3.4–3.6](../../docs/DATA.md#34-orderstxt--owner-cameron). Status and stock rules: [ARCHITECTURE §9](../../docs/ARCHITECTURE.md#9-orders-stock-and-status).
 
 ## Folder layout
-```
-cameron/src/pharmacy/orders/
-├── OrderRepository.java
-├── VoidRecordRepository.java
-├── OrderService.java
-├── AnalyticsService.java
-├── model/
-│   ├── Order.java
-│   ├── OrderItem.java
-│   ├── OrderStatus.java
-│   └── VoidRecord.java
-├── discount/
-│   ├── DiscountStrategy.java
-│   ├── DiscountType.java
-│   ├── RegularDiscount.java
-│   ├── SeniorPwdDiscount.java
-│   └── BulkDiscount.java
-├── exception/
-│   └── InvalidStatusTransitionException.java
-└── ui/
-    ├── OrderMenu.java
-    ├── OrderAdminMenu.java
-    └── AnalyticsMenu.java
-```
+Every file you create, with its purpose and milestone: [BLUEPRINT §5](../../docs/BLUEPRINT.md#5-cameron--orders-discounts-analytics-cameron).
 
 ## Classes to build
 
