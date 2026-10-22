@@ -104,7 +104,9 @@ To reset all data, delete the `data/` folder. The next run recreates it with onl
 
 `common/` must exist before anything else compiles, and `AdminMenu`/`PharmacistMenu` need every member's menu class. Work in this order.
 
-**Each member follows their own step-by-step prompts, with the git commands for each step, in `<member>/docs/PROMPTS.md`:** [Heather](heather/docs/PROMPTS.md) · [Karlo](karlo/docs/PROMPTS.md) · [Cameron](cameron/docs/PROMPTS.md).
+There are two ways to work. **The whole team picks one:**
+- **Step mode:** each member follows step-by-step prompts, with git commands for each step, in `<member>/docs/PROMPTS.md`: [Heather](heather/docs/PROMPTS.md) · [Karlo](karlo/docs/PROMPTS.md) · [Cameron](cameron/docs/PROMPTS.md). It follows the milestones below and has some waiting.
+- **Solo mode:** each member pastes **one prompt** for their whole part, with no waiting: [Heather](heather/docs/SOLO-PROMPT.md) · [Karlo](karlo/docs/SOLO-PROMPT.md) · [Cameron](cameron/docs/SOLO-PROMPT.md). Missing classes from others are faked locally until all three parts are merged on an `integration` branch. Rules: [docs/SOLO-MODE.md](docs/SOLO-MODE.md). In solo mode, M0–M1 happen at the same time and M2 is the integration.
 
 | Milestone | Who | What | Done when |
 |---|---|---|---|
@@ -137,9 +139,10 @@ To reset all data, delete the `data/` folder. The next run recreates it with onl
 | [docs/DATA.md](docs/DATA.md) | Every data file, its column order, ID and date formats, enums, constants |
 | [docs/FEATURES.md](docs/FEATURES.md) | What every feature does, its owner and menu path |
 | [docs/VALIDATION.md](docs/VALIDATION.md) | Every validation rule and error message, plus the hostile-input checklist |
-| [docs/DECISIONS.md](docs/DECISIONS.md) | Why things are the way they are (ADR-001…015) |
+| [docs/DECISIONS.md](docs/DECISIONS.md) | Why things are the way they are (ADR-001…016) |
 | [docs/CONVENTIONS.md](docs/CONVENTIONS.md) | Code style, OOP rules, git workflow, how to verify |
 | [docs/GIT-GUIDE.md](docs/GIT-GUIDE.md) | Copy-paste git/GitHub commands: branch, commit, push, PR, review, merge |
+| [docs/SOLO-MODE.md](docs/SOLO-MODE.md) | Building all three parts at once: stand-ins, the `integration` branch, the integration prompt |
 | [docs/GOTCHAS.md](docs/GOTCHAS.md) | Java pitfalls that look like bugs |
 | [docs/SESSION_LOG.md](docs/SESSION_LOG.md) | Changes that affect everyone |
-| `heather/`, `karlo/`, `cameron/` `docs/` | Each member's checklist (CONTEXT), step-by-step agent prompts and git commands (PROMPTS), own gotchas, own session log |
+| `heather/`, `karlo/`, `cameron/` `docs/` | Each member's checklist (CONTEXT), step-by-step agent prompts and git commands (PROMPTS), single solo-mode prompt (SOLO-PROMPT), own gotchas, own session log |

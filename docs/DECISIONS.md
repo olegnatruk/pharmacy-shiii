@@ -116,3 +116,9 @@ Status: Accepted · Date: 2026-10-22
 Context: `BigDecimal` is exact but verbose. Amounts here are small.
 Decision: Use `double`, and pass every computed amount through `Format.round2`. Display with `Format.peso`.
 Consequences: Never compare money with `==`. Compare rounded values, or use `Math.abs(a - b) < 0.005`.
+
+## ADR-016 — Solo mode: build in parallel with local stand-ins
+Status: Accepted · Date: 2026-10-22
+Context: In step mode, members wait on each other at fixed hand-offs, and the dependencies form a circle (Karlo and Cameron need `common/`; Heather and Karlo need Cameron's `hasOrdersFor*`; Cameron needs Karlo's stock methods). The group wanted one prompt per member with no waiting.
+Decision: Offer [solo mode](SOLO-MODE.md) as an alternative to step mode. Each member builds their whole part against throwaway, uncommitted stand-ins of the [§6 contracts](ARCHITECTURE.md#6-cross-member-contracts) in `stubs/`. Each part goes by PR into a shared `integration` branch, which goes to `main` in one PR once it compiles and passes the M2 checks. The team uses one mode, not both.
+Consequences: No waiting, but mismatches with §6 appear only at integration, so §6 must not change silently. `main` stays compiling because nothing reaches it before integration. Stand-ins are deleted at integration. `integration` → `main` is merged with a merge commit, so each member's commits keep their author.

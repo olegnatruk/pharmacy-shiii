@@ -61,6 +61,7 @@ The exact commands are in [GIT-GUIDE.md](GIT-GUIDE.md). These are the rules:
 | Ownership | Edit only your own folder (and your own `docs/`). Need a change elsewhere? Ask the owner (see §5). |
 | Never commit | `data/`, `out/`, `*.class`, IDE folders. `.gitignore` handles this. Don't force-add them. |
 | Docs | If your change makes a doc wrong, fix the doc **in the same PR**. |
+| Solo mode | Branches `heather/accounts`, `karlo/inventory`, `cameron/orders`; PRs go into `integration`, then `integration` → `main` once. Never commit `stubs/`. See [SOLO-MODE §5](SOLO-MODE.md#5-git-in-solo-mode). |
 
 ## 5. Changing `common/` or a cross-member contract
 

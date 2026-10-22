@@ -214,6 +214,8 @@ public interface DiscountStrategy {
 
 These are the only classes/methods one member may call in another member's folder. Everything else is private to its owner. All methods listed `throws` checked exceptions from §7.
 
+**Creating objects:** every menu, service and repository below has a public no-argument constructor (`new InventoryService()`, `new CatalogMenu()`). `DataStore` and `Session` are Singletons (`getInstance()`); `ConsoleInput`, `InputValidator`, `Format` and `DataFiles` are static-only. In [solo mode](SOLO-MODE.md), stand-ins copy these signatures exactly.
+
 ### 6.1 Provided by `common/` (Heather) — used by everyone
 
 ```java

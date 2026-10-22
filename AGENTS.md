@@ -20,7 +20,8 @@ If you don't know which member you are helping, **ask before editing anything.**
 |---|---|
 | Which file goes where? What is each file for? | [docs/BLUEPRINT.md](docs/BLUEPRINT.md) |
 | Which layer does what, what can I call from another member? | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) (§6 = contracts) |
-| What is my member's next step? | `<member>/docs/PROMPTS.md` + `<member>/docs/CONTEXT.md` |
+| What is my member's next step? | `<member>/docs/PROMPTS.md` (step mode) or `<member>/docs/SOLO-PROMPT.md` (solo mode), + `<member>/docs/CONTEXT.md` |
+| Solo mode: stand-ins in `stubs/`, `integration` branch | [docs/SOLO-MODE.md](docs/SOLO-MODE.md) |
 | Git commands | [docs/GIT-GUIDE.md](docs/GIT-GUIDE.md) (the member runs them, not you) |
 | File format, columns, IDs, enums, constants | [docs/DATA.md](docs/DATA.md) |
 | What exactly should feature X do? | [docs/FEATURES.md](docs/FEATURES.md) |
@@ -43,7 +44,7 @@ If you don't know which member you are helping, **ask before editing anything.**
 ## 4. Verifying your work
 
 There are no automated tests. Before saying something is done:
-1. Compile **all four** folders together ([README → Run it](README.md#run-it)).
+1. Compile **all four** folders together ([README → Run it](README.md#run-it)). In solo mode, also include `stubs/` ([SOLO-MODE §4](docs/SOLO-MODE.md#4-compile-and-run-in-solo-mode)).
 2. Run `pharmacy.Main` from the repo root and walk through the feature with the right role.
 3. Run the [hostile-input checklist](docs/VALIDATION.md#4-hostile-input-checklist) on every screen you touched.
 4. Check that the `data/*.txt` lines match [DATA.md](docs/DATA.md).

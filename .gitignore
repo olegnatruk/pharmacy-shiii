@@ -4,6 +4,9 @@ bin/
 *.class
 sources.txt
 
+# Solo-mode stand-ins (local only; see docs/SOLO-MODE.md)
+stubs/
+
 # Runtime data (each member keeps their own; see docs/DATA.md)
 data/
 

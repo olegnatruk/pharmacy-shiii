@@ -37,3 +37,11 @@ Added three things:
 - `<member>/docs/PROMPTS.md`: step-by-step agent prompts with the git commands for each step.
 
 Two new files are planned: `karlo/.../ui/MedicineTable.java` and `cameron/.../model/SalesReport.java`. The merge order across members is in GIT-GUIDE §9.
+
+## 2026-10-22 — Setup — Solo mode added
+Added a second way to work, so each member can finish their part with one prompt and no waiting ([ADR-016](DECISIONS.md)):
+- [SOLO-MODE.md](SOLO-MODE.md): local stand-ins in `stubs/` (gitignored), the `integration` branch, and the integration prompt.
+- `<member>/docs/SOLO-PROMPT.md`: one prompt per member, plus git commands.
+- [ARCHITECTURE §6](ARCHITECTURE.md#6-cross-member-contracts) now states that menus, services and repositories have public no-argument constructors.
+
+The team picks step mode or solo mode, not both.

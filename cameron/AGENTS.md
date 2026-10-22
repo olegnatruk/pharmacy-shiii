@@ -12,7 +12,7 @@
 1. Root [AGENTS.md](../AGENTS.md): project rules and doc map.
 2. This file.
 3. [docs/CONTEXT.md](docs/CONTEXT.md): your features, classes, contracts, checklist.
-   Your member runs the steps in [docs/PROMPTS.md](docs/PROMPTS.md). Follow its **Working rules**.
+   Your member works either in step mode ([docs/PROMPTS.md](docs/PROMPTS.md): follow its **Working rules**) or in solo mode ([docs/SOLO-PROMPT.md](docs/SOLO-PROMPT.md) + [SOLO-MODE](../docs/SOLO-MODE.md)). The prompt they paste tells you which.
 4. [docs/GOTCHAS.md](docs/GOTCHAS.md) and the last few entries of [docs/SESSION_LOG.md](docs/SESSION_LOG.md).
 5. Shared docs as needed: [FEATURES §Orders](../docs/FEATURES.md#orders--cameron), [VALIDATION §3.3](../docs/VALIDATION.md#33-orders-discounts-prescriptions-analytics--cameron), [DATA §3.4–3.6](../docs/DATA.md#34-orderstxt--owner-cameron), [ARCHITECTURE §5.2 and §9](../docs/ARCHITECTURE.md#9-orders-stock-and-status).
 

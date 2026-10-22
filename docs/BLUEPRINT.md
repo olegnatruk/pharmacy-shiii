@@ -30,6 +30,7 @@ pharmacy-management-system/
 │   ├── DECISIONS.md              ADRs
 │   ├── CONVENTIONS.md            code style, OOP rules, workflow
 │   ├── GIT-GUIDE.md              exact git / GitHub commands
+│   ├── SOLO-MODE.md              build all parts at once with stand-ins
 │   ├── GOTCHAS.md                shared Java pitfalls
 │   └── SESSION_LOG.md            changes that affect everyone
 │
@@ -42,6 +43,7 @@ pharmacy-management-system/
 │     └── docs/
 │         ├── CONTEXT.md          checklist of classes + definition of done
 │         ├── PROMPTS.md          copy-paste prompts + git commands per step
+│         ├── SOLO-PROMPT.md      one prompt for the whole part (solo mode)
 │         ├── GOTCHAS.md          traps in that area
 │         └── SESSION_LOG.md      that member's work log
 │
@@ -161,6 +163,7 @@ data/                     created by DataStore.seedDefaults() — format in DATA
 ├── order_items.txt       Cameron
 └── void_log.txt          Cameron
 out/                      javac -d out ... puts .class files here
+stubs/                    solo mode only: local stand-ins for other members' classes (docs/SOLO-MODE.md)
 ```
 
 ## 7. Who calls whom

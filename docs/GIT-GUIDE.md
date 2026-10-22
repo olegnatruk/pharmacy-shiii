@@ -1,6 +1,6 @@
 # Git & GitHub Guide
 
-Exact commands for this project, from first setup to merged pull request. The rules behind them are in [CONVENTIONS §4](CONVENTIONS.md#4-git-workflow). Each member's `docs/PROMPTS.md` repeats the commands for each of their milestones with the right branch names filled in.
+Exact commands for this project, from first setup to merged pull request. The rules behind them are in [CONVENTIONS §4](CONVENTIONS.md#4-git-workflow). Each member's `docs/PROMPTS.md` repeats the commands for each of their milestones with the right branch names filled in. Using solo mode? Its branches and its `integration` branch are in [SOLO-MODE §5](SOLO-MODE.md#5-git-in-solo-mode).
 
 Commands work in **macOS Terminal**, **Git Bash**, and **Windows PowerShell**. Replace anything in `<angle brackets>`.
 
@@ -255,4 +255,4 @@ docs: record bulk discount rule in DATA.md
 | | `karlo/stock-audit` | `cameron/admin-orders` |
 | | `karlo/catalog-delete` | `cameron/analytics` |
 
-**Overall merge order** (across members): Heather `common-foundation` → Karlo + Cameron `menu-skeleton` → Heather `wire-menus` → everything else in parallel, respecting the "Wait for" column in each member's `docs/PROMPTS.md`.
+**Overall merge order** (across members): Heather `common-foundation` → Karlo + Cameron `menu-skeleton` → Heather `wire-menus` → everything else in parallel, respecting the "Wait for" column in each member's `docs/PROMPTS.md`. In **solo mode** the branches and merge order are different: see [SOLO-MODE §5](SOLO-MODE.md#5-git-in-solo-mode).
